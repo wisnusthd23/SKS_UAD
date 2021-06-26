@@ -1,0 +1,7 @@
+body {
+	background: radial-gradient(#ffad00, #083fa3) !important;
+}
+.login-logo a,
+.register-logo a {
+	color: #ffffff;
+}
