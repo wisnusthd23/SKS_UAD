@@ -38,8 +38,8 @@
     <nav class="nav">
       <div>
         <a href="<?= base_url('home/dashboard') ?>" class="nav__logo <?php if ($this->uri->segment(1) == "home/dashboard") {
-                                                                echo "active";
-                                                              } ?>">
+                                                                        echo "active";
+                                                                      } ?>">
           <i class='bx bxs-data'></i>
           <span class="nav__logo-name">SKS UAD</span>
         </a>
@@ -55,16 +55,18 @@
           <a href="<?= base_url('matkul') ?>" class="nav__link <?php if ($this->uri->segment(1) == "matkul") {
                                                                   echo "active";
                                                                 } ?>">
-            <i class="bx bx-user nav__icon"></i>
+            <i class='bx bxs-book-alt'></i>
             <span class="nav__name">Matkul</span>
           </a>
 
-          <a href="#" class="nav__link">
+          <a href="<?= base_url('pilihan') ?>" class="nav__link <?php if ($this->uri->segment(1) == "pilihan") {
+                                                                  echo "active";
+                                                                } ?>">
             <i class="bx bx-message-square-detail nav__icon"></i>
-            <span class="nav__name">Messages</span>
+            <span class="nav__name">Matkul Pilihan</span>
           </a>
 
-          <a href="#" class="nav__link">
+          <!-- <a href="#" class="nav__link">
             <i class="bx bx-bookmark nav__icon"></i>
             <span class="nav__name">Favorites</span>
           </a>
@@ -77,7 +79,7 @@
           <a href="#" class="nav__link">
             <i class="bx bx-bar-chart-alt-2 nav__icon"></i>
             <span class="nav__name">Analytics</span>
-          </a>
+          </a> -->
         </div>
       </div>
 
